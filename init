@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+echo "unstowing dir $PWD from $HOME"
+
+echo $STOW_FOLDERS | xargs -d , -I % sh -c 'stow -R %'
