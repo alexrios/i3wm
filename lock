@@ -1,0 +1,6 @@
+#!/bin/zsh
+rm /tmp/ss.png
+scrot /tmp/ss.png
+convert /tmp/ss.png -blur 0x20 /tmp/ssb.png
+convert /tmp/ssb.png /home/alexrios/Downloads/apex-champion.png -gravity center -composite -matte /tmp/screenlock.png
+i3lock -i /tmp/screenlock.png
